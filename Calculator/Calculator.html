@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input class="display" id="display" value="0" disabled aria-label="Display">
+        <table>
+            <tr>
+                <td><button class="operator" id="clean" aria-label="Clear">C</button></td>
+                <td><button class="operator" aria-label="Backspace">&lt;</button></td>
+                <td><button class="operator" aria-label="Multiply">x</button></td>
+                <td><button class="operator" aria-label="Divide">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" aria-label="Seven">7</button></td>
+                <td><button class="number" aria-label="Eight">8</button></td>
+                <td><button class="number" aria-label="Nine">9</button></td>
+                <td><button class="operator" aria-label="Subtract">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" aria-label="Four">4</button></td>
+                <td><button class="number" aria-label="Five">5</button></td>
+                <td><button class="number" aria-label="Six">6</button></td>
+                <td><button class="operator" aria-label="Add">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" aria-label="One">1</button></td>
+                <td><button class="number" aria-label="Two">2</button></td>
+                <td><button class="number" aria-label="Three">3</button></td>
+                <td rowspan="2"><button class="operator" aria-label="Equals" style="height: 110px;">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="number" aria-label="Zero" style="width: 108px;">0</button></td>
+                <td><button class="operator" aria-label="Decimal">.</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
